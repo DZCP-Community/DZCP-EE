@@ -1,0 +1,39 @@
+<table class="navContent" cellspacing="0">
+  <tr>
+    <td class="loginLeft"></td>
+    <td>
+      <form name="login" action="?index=user&amp;action=login&amp;do=yes&from=menu" method="post" onsubmit="return DZCP.submitButton('navLogin')">
+        <table class="navContent">
+          <tr>
+            <td>
+              <input type="text" name="user" class="loginName_dis"
+               onblur="this.className='loginName_dis';if(this.value=='')this.value='Loginname'"
+               onfocus="this.className='loginName_en';if(this.value=='Loginname') this.value='';" value="Loginname" required/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="password" name="pwd" class="loginPwd_dis"
+              onblur="this.className='loginPwd_dis';if(this.value=='')this.value='Password'"
+              onfocus="this.className='loginPwd_en';if(this.value=='Password') this.value='';" value="Password" required/>
+            </td>
+          </tr>
+          <tr>
+            <td><input class="checkbox" type="checkbox" id="permanent" name="permanent" value="1" /><label for="permanent"> [lang_login_permanent]</label></td>
+          </tr>
+          [secure]
+          <tr>
+            <td align="center"><input id="navLogin" type="submit" value="[lang_login_login]" class="loginSubmit" name="send" /></td>
+          </tr>
+          <tr>
+            <td>&raquo; <a class="navLostPwd" href="?index=user&amp;action=register" title="[lang_login_signup]">[lang_login_signup]</a></td>
+          </tr>
+          <tr>
+            <td>&raquo; <a class="navLostPwd" href="?index=user&amp;action=lostpwd" title="[lang_login_lostpwd]">[lang_login_lostpwd]</a></td>
+          </tr>
+        </table>
+      </form>
+    </td>
+    <td class="loginRight"></td>
+  </tr>
+</table>

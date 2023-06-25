@@ -1,0 +1,28 @@
+<tr>
+  <td class="contentHead" colspan="5" align="center"><span class="fontBold">[lang_clanwars]</span></td>
+</tr>
+<tr>
+  <td class="contentMainFirst info" colspan="5" align="center">
+      <form name="formChange" action="">
+          <select name="changeme" onChange="DZCP.switchuser()" class="dropdown">
+             <option selected="selected" value="" class="dropdownKat">[lang_ulist_sort]</option>
+               [squads]
+          </select> [navi]
+      </form>
+  </td>
+</tr>
+<tr>
+  <td class="contentMainTop info" style="width:140px"><span class="fontBold">[lang_datum]</span></td>
+  <td class="contentMainTop info" colspan="4"><span class="fontBold">[lang_opponent]</span></td>
+</tr>
+[show]
+<tr>
+  <td class="contentBottom info" colspan="5">
+    <form action="" method="get" onsubmit="return(DZCP.submitButton())">
+      <input type="hidden" name="index" value="admin" />
+      <input type="hidden" name="admin" value="cw" />
+      <input type="hidden" name="do" value="new" />
+      <input id="contentSubmit" type="submit" class="submit" value="[lang_cw_admin_head]" />
+    </form>
+  </td>
+</tr>
